@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.people, .animals {
+    width: 200px;
+}
+
+.item {
+    background: #eee;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    cursor: grab;
+}
+
+.dropzone {
+    height: 80px;
+    margin-bottom: 10px;
+    border: 2px dashed #666;
+    padding: 10px;
+}
+
+.dropzone.hover {
+    background: #d0ffd0;
+}
