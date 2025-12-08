@@ -1,32 +1,93 @@
+/* BASIC PAGE STYLING */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     padding: 20px;
+    background: #fafafa;
 }
 
+h1, h2 {
+    color: #2b547e;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2b547e;
+}
+
+
+/* MATCH PAGE LAYOUT FIXES */
 .container {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    margin-top: 30px;
 }
 
-.people, .animals {
-    width: 200px;
+/* FOR LEFT COLUMN OF PEOPLE */
+.people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
 }
 
+/* FOR RIGHT COLUMN OF ANIMALS */
+.animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+}
+
+
+/* ITEMS YOU DRAG */
 .item {
-    background: #eee;
+    width: 90%;
+    max-width: 200px;
+    background: white;
+    border: 1px solid #aaa;
     padding: 10px;
-    margin: 6px 0;
-    border: 1px solid #ccc;
+    margin: 8px auto;
+    text-align: center;
+    border-radius: 4px;
     cursor: grab;
 }
 
-.dropzone {
-    height: 80px;
-    margin-bottom: 10px;
-    border: 2px dashed #666;
-    padding: 10px;
+.item.dragging {
+    opacity: 0.6;
 }
 
+
+/* DROP BOXES FOR ANIMALS */
+.dropzone {
+    width: 260px;
+    min-height: 110px;
+    border: 2px dashed gray;
+    border-radius: 6px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Highlight zone while hovering */
 .dropzone.hover {
-    background: #d0ffd0;
+    background: #d9ffd9;
+    border-color: green;
+}
+
+/* Label inside zone */
+.dropzone span {
+    font-weight: bold;
+    margin-bottom: 6px;
 }
