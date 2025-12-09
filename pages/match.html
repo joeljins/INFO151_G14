@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html>
+
+<!--
+File name: ./INFO151_G14/pages/match.html
+Purpose: INFO151-900 - Page for matching people with animals
+Authors: Joel Jins, Vincent Lamb
+DrexelId: jj3249, vdl29
+Complete Date: 2025/12/09
+-->
+
+<html lang="en-US">
+
 <head>
+    <!-- Title for the webpage displayed in the browser tab -->
     <title>Stray Animals</title>
+
+    <!-- Link external CSS file for styling -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
+    <!-- Main heading for the page -->
     <h1>Stray Animals Looking for Homes</h1>
     
+    <!-- Navigation menu linking to other pages -->
     <nav>
         <a href="../index.html">Home</a>
         <a href="animals.html">Animals</a>
         <a href="people.html">People</a>
         <a href="match.html">Match</a>
     </nav>
+
+    <!-- Heading for the match section -->
     <h1>Match People With Animals</h1>
 
+    <!-- Main container holding both animals and people sections -->
     <div class="container">
 
+        <!-- Container for all animal cards/images -->
         <div class="animal-container">
             <h2>Animals</h2>
+            <!-- JavaScript will dynamically populate this container with draggable animal images -->
         </div>
 
+        <!-- Container for all people cards and their dropzones -->
         <div class="match-container">
             <h2>People</h2>
+            <!-- JavaScript will dynamically populate this container with people images and corresponding dropzones -->
         </div>
 
     </div>
+
+    <!-- Include the JavaScript file responsible for creating drag-and-drop functionality -->
     <script src="../js/match.js"></script>
+
+    <!-- Back to home link, centered at the bottom of the page -->
     <p style="text-align: center; margin-top: 30px;">
         <a href="../index.html" style="color: #764ba2; text-decoration: none; font-weight: bold;">Back to Home</a>
     </p>
+
 </body>
 </html>

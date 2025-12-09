@@ -6,6 +6,8 @@ DrexelId: jj3249, vdl29
 Complete Date: 2025/12/09
 */
 
+// Create and display animals
+
 // Array of animal image identifiers (numbers) for easy creation of image src
 let animals = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
@@ -17,11 +19,11 @@ animals.forEach(item => {
 
     // Create a div that will serve as a dropzone for each animal image
     const animal = document.createElement("div");
-    animal.className = "dropzone";
+    animal.className = "dropzone"; // assign dropzone class for styling and drag/drop functionality
     
     // Add event listener to allow items to be dragged over this div
     animal.addEventListener("dragover", e => {
-        e.preventDefault();
+        e.preventDefault(); // prevent default behavior to allow drop
     });
 
     // Add event listener to handle drop action
@@ -52,6 +54,8 @@ animals.forEach(item => {
     animalContainer.appendChild(animal);
 });
 
+// Create and display people
+
 // Array of person identifiers (letters) for easy creation of image src
 let people = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -75,7 +79,7 @@ people.forEach(item => {
     // Append the image to the person div
     person.appendChild(image);
 
-    // Append the person div to the match container div
+    // Append the person div to the match div
     match.appendChild(person);
 
     // Create a dropzone for this person where animals can be dropped
@@ -84,12 +88,12 @@ people.forEach(item => {
 
     // Allow dragover events so that drop is possible
     dropZone.addEventListener("dragover", e => {
-        e.preventDefault();
+        e.preventDefault(); // prevent default behavior to allow drop
     });
 
     // Handle dropping of a dragged animal into this person's dropzone
     dropZone.addEventListener("drop", e => {
-        e.preventDefault(); // prevent default drop behavior
+        e.preventDefault(); 
         const animal = document.querySelector('.dragging'); // get the dragged animal element
         if (animal) { 
             dropZone.appendChild(animal); // append the dragged animal to this dropzone
