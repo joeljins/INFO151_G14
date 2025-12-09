@@ -145,6 +145,13 @@ nav a {
 /* Container shared layout */
 .card-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 10px;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
