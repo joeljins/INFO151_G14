@@ -5,27 +5,25 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <h1>Match People With Animals</h1>
 
-<h1>Match People With Animals</h1>
+    <div class="container">
 
-<div class="container">
+        <div class="people">
+            <h2>People</h2>
+            <div draggable="true" class="item" id="p1">Couple</div>
+            <div draggable="true" class="item" id="p2">Jason</div>
+            <div draggable="true" class="item" id="p3">Family</div>
+        </div>
 
-    <div class="people">
-        <h2>People</h2>
-        <div draggable="true" class="item" id="p1">Person A</div>
-        <div draggable="true" class="item" id="p2">Person B</div>
-        <div draggable="true" class="item" id="p3">Person C</div>
+        <div class="animals">
+            <h2>Animals</h2>
+            <div class="dropzone" data-animal="Tabby Cat">Drop here for Tabby Cat</div>
+            <div class="dropzone" data-animal="Snowball">Drop here for Snowball</div>
+            <div class="dropzone" data-animal="Mittens">Drop here for Mittens</div>
+        </div>
     </div>
-
-    <div class="animals">
-        <h2>Animals</h2>
-        <div class="dropzone" data-animal="Dog">Drop here for Dog</div>
-        <div class="dropzone" data-animal="Cat">Drop here for Cat</div>
-    </div>
-
-
-</div>
-
-<!-- <script src="../js/match.js"></script> -->
+    <script src="../js/match.js"></script>
+    <a href="../index.html">Back</a>
 </body>
 </html>
