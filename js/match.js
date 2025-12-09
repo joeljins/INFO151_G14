@@ -1,4 +1,4 @@
-let animals = ['1', '2', '3', '4', '5', '6'];
+let animals = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let animalContainer = document.querySelector(".animal-container");
 animals.forEach(item => {
     const animal = document.createElement("div");
