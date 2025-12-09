@@ -1,18 +1,29 @@
-/* BASIC PAGE STYLING */
+/* 
+File name: ./css/style.css
+Purpose: Styling for Stray Animals and Match pages
+Authors: Joel Jins, Vincent Lamb
+DrexelId: jj3249, vdl29
+Complete Date: 2025/12/09
+*/
+
+/* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
     background: #fafafa;
 }
 
+/* Styling for main headings */
 h1, h2 {
     color: #2b547e;
 }
 
+/* Navigation container styling */
 nav {
     margin-bottom: 20px;
 }
 
+/* Navigation links styling */
 nav a {
     text-decoration: none;
     font-weight: bold;
@@ -20,8 +31,7 @@ nav a {
     color: #2b547e;
 }
 
-
-/* MAIN CONTAINER */
+/* Main container holding animals and match sections */
 .container {
     display: flex;
     justify-content: center;
@@ -30,7 +40,7 @@ nav a {
     margin-top: 30px;
 }
 
-/* ANIMAL CONTAINER */
+/* Animal container styling */
 .animal-container {
     display: flex;
     flex-direction: column;
@@ -38,11 +48,12 @@ nav a {
     min-width: 280px;
 }
 
+/* Heading inside animal container */
 .animal-container h2 {
     margin-bottom: 20px;
 }
 
-/* MATCH CONTAINER */
+/* Match container styling */
 .match-container {
     display: flex;
     flex-direction: column;
@@ -50,6 +61,7 @@ nav a {
     gap: 15px;
 }
 
+/* Heading inside match container */
 .match-container h2 {
     margin-bottom: 20px;
 }
@@ -63,7 +75,7 @@ nav a {
     justify-content: center;
 }
 
-/* DROP BOXES FOR ANIMALS */
+/* Dropzone boxes for animals */
 .dropzone {
     width: 260px;
     min-height: 160px;
@@ -79,21 +91,21 @@ nav a {
     transition: all 0.2s ease;
 }
 
-/* Highlight zone while hovering */
+/* Dropzone hover state */
 .dropzone.hover {
     background: #d9ffd9;
     border-color: #2ecc71;
     border-style: solid;
 }
 
-/* Label inside zone */
+/* Label inside dropzone */
 .dropzone span {
     font-weight: bold;
     margin-bottom: 6px;
     color: #666;
 }
 
-/* ITEMS YOU DRAG */
+/* Draggable item styling */
 .item {
     width: 90%;
     max-width: 200px;
@@ -106,12 +118,13 @@ nav a {
     cursor: grab;
 }
 
+/* Draggable item while dragging */
 .item.dragging {
     opacity: 0.5;
     cursor: grabbing;
 }
 
-/* Shared card styling for people & animals */
+/* Shared card styling for people and animals */
 .card {
     width: 220px;
     border: 1px solid #aaa;
@@ -121,7 +134,7 @@ nav a {
     text-align: center;
 }
 
-/* Card images */
+/* Card images styling */
 .card img {
     width: 100%;
     height: 140px;
@@ -129,20 +142,20 @@ nav a {
     border-radius: 4px;
 }
 
-/* Titles inside cards */
+/* Card titles styling */
 .card h3 {
     margin: 8px 0;
     font-size: 18px;
 }
 
-/* Paragraphs inside cards */
+/* Card paragraphs styling */
 .card p {
     margin: 4px 0;
     font-size: 14px;
     text-align: left;
 }
 
-/* Container shared layout */
+/* Container for multiple cards */
 .card-container {
     display: flex;
     flex-direction: column;
@@ -150,16 +163,18 @@ nav a {
     padding: 10px;
 }
 
-.row{
+/* Row layout for cards */
+.row {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
+/* Background image for body */
 body {
-    background-image: url('../images/background2.jpg'); /* path to your image */
-    background-size: cover;       /* makes the image cover the entire page */
-    background-repeat: no-repeat; /* prevents tiling */
-    background-position: center;  /* centers the image */
-    background-attachment: fixed; /* keeps the image fixed while scrolling */
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
