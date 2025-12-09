@@ -11,7 +11,7 @@ animals.forEach(item => {
         const returnAnimal = document.querySelector('.dragging');
         if (returnAnimal) {
             animal.appendChild(returnAnimal); 
-            // animal.classList.remove("dragging");
+            animal.classList.remove("dragging");
         }
         });
 
@@ -35,10 +35,10 @@ people.forEach(item => {
     const match = document.createElement("div");
 
     const person = document.createElement("div");
+    person.className = "card";
 
     const image = document.createElement("img");
     image.src = `../images/person${item}.jpg`;
-    image.className = "card";
 
     person.appendChild(image);
     match.appendChild(person);
@@ -53,7 +53,7 @@ people.forEach(item => {
         const animal = document.querySelector('.dragging');
         if (animal) {
             dropZone.appendChild(animal); 
-            // animal.classList.remove("dragging");
+            animal.classList.remove("dragging");
         }
         });
     match.appendChild(dropZone);
