@@ -155,3 +155,11 @@ nav a {
     gap: 20px;
     justify-content: center;
 }
+
+body {
+    background-image: url('../images/background2.jpg'); /* path to your image */
+    background-size: cover;       /* makes the image cover the entire page */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-position: center;  /* centers the image */
+    background-attachment: fixed; /* keeps the image fixed while scrolling */
+}
