@@ -21,7 +21,7 @@ nav a {
 }
 
 
-/* MATCH PAGE LAYOUT FIXES */
+/* MAIN CONTAINER */
 .container {
     display: flex;
     justify-content: center;
@@ -30,31 +30,68 @@ nav a {
     margin-top: 30px;
 }
 
+/* ANIMAL CONTAINER */
+.animal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+}
+
+.animal-container h2 {
+    margin-bottom: 20px;
+}
+
+/* MATCH CONTAINER */
 .match-container {
     display: flex;
-    flex-direction: row; 
-    align-items: center;
-    gap: 120px;
-    margin-top: 30px;
-}
-
-
-/* FOR LEFT COLUMN OF PEOPLE */
-.people {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 240px;
+    gap: 15px;
 }
 
-/* FOR RIGHT COLUMN OF ANIMALS */
-.animals {
+.match-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Individual match row */
+.match-container > div {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* DROP BOXES FOR ANIMALS */
+.dropzone {
     width: 260px;
+    min-height: 160px;
+    border: 2px dashed #aaa;
+    border-radius: 8px;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
 }
 
+/* Highlight zone while hovering */
+.dropzone.hover {
+    background: #d9ffd9;
+    border-color: #2ecc71;
+    border-style: solid;
+}
+
+/* Label inside zone */
+.dropzone span {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #666;
+}
 
 /* ITEMS YOU DRAG */
 .item {
@@ -70,36 +107,10 @@ nav a {
 }
 
 .item.dragging {
-    opacity: 0.6;
+    opacity: 0.5;
+    cursor: grabbing;
 }
 
-
-/* DROP BOXES FOR ANIMALS */
-.dropzone {
-    width: 260px;
-    min-height: 110px;
-    border: 2px dashed gray;
-    border-radius: 6px;
-    background: white;
-    padding: 10px;
-    margin-bottom: 15px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Highlight zone while hovering */
-.dropzone.hover {
-    background: #d9ffd9;
-    border-color: green;
-}
-
-/* Label inside zone */
-.dropzone span {
-    font-weight: bold;
-    margin-bottom: 6px;
-}
 /* Shared card styling for people & animals */
 .card {
     width: 220px;

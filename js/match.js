@@ -1,4 +1,4 @@
-let animals = ['1', '2', '3'];
+let animals = ['1', '2', '3', '4', '5', '6'];
 let animalContainer = document.querySelector(".animal-container");
 animals.forEach(item => {
     const animal = document.createElement("div");
@@ -28,7 +28,7 @@ animals.forEach(item => {
     animalContainer.appendChild(animal);
 })
 
-let people = ['A', 'B', 'C'];
+let people = ['A', 'B', 'C', 'D', 'E', 'F'];
 let matchContainer = document.querySelector(".match-container");
 
 people.forEach(item => {
