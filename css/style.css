@@ -1,7 +1,7 @@
 /* 
 File name: ./css/style.css
 Purpose: Styling for Stray Animals and Match pages
-Authors: Joel Jins, Vincent Lamb
+Authors: Joel Jins, Vincent Lam
 DrexelId: jj3249, vdl29
 Complete Date: 2025/12/09
 */
@@ -9,18 +9,43 @@ Complete Date: 2025/12/09
 /* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     background: #fafafa;
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Styling for main headings */
-h1, h2 {
-    color: #2b547e;
+/* Top red banner styling */
+.top-banner {
+    background: #cc0000;
+    height: 8px;
+    width: 100%;
 }
 
-/* Navigation container styling */
+/* Header and navigation container styling */
+.header-nav {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Main heading inside header */
+.header-nav h1 {
+    color: #ff0000;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+.header-nav h2 {
+    color: #ff0000;
+}
+/* Navigation bar styling */
 nav {
-    margin-bottom: 20px;
+    text-align: center;
+    margin: 0;
 }
 
 /* Navigation links styling */
@@ -28,7 +53,69 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin-right: 10px;
-    color: #2b547e;
+    color: #ff0000;
+    padding: 8px 16px;
+}
+
+/* Navigation links hover state */
+nav a:hover {
+    color: #cc0000;
+}
+
+/* Main heading styling */
+h1 {
+    color: #1a1a1a;
+    font-size: 2em;
+}
+
+/* Secondary heading styling */
+h2 {
+    color: #1a1a1a;
+    font-size: 1.3em;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Information container styling */
+.info-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Individual information card styling */
+.info-card {
+    flex: 0 0 40%;
+    width: 40%;
+    height: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Heading inside info card */
+.info-card h2 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #1a1a1a;
+}
+
+/* Paragraph inside info card */
+.info-card p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Main container holding animals and match sections */
@@ -146,6 +233,7 @@ nav a {
 .card h3 {
     margin: 8px 0;
     font-size: 18px;
+    color: #1a1a1a;
 }
 
 /* Card paragraphs styling */
@@ -153,6 +241,8 @@ nav a {
     margin: 4px 0;
     font-size: 14px;
     text-align: left;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Container for multiple cards */
@@ -164,17 +254,8 @@ nav a {
 }
 
 /* Row layout for cards */
-.row {
+.row{
     display: flex;
     gap: 20px;
     justify-content: center;
-}
-
-/* Background image for body */
-body {
-    background-image: url('../images/background2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }

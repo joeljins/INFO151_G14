@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html>
+
+<!--
+File name: ./pages/people.html
+Purpose: Page displaying people looking to adopt animals
+Authors: Joel Jins, Vincent Lam
+DrexelId: jj3249, vdl29
+Complete Date: 2025/12/09
+-->
+
+<html lang="en-US">
+
 <head>
+    <!-- Title for the webpage displayed in the browser tab -->
     <title>People</title>
+    
+    <!-- Link external CSS file for styling -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-    <h1>People Looking to Adopt</h1>
+    <!-- Top red banner -->
+    <div class="top-banner"></div>
     
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="animals.html">Animals</a>
-        <a href="people.html">People</a>
-        <a href="match.html">Match</a>
-    </nav>
+    <!-- Header and navigation section -->
+    <div class="header-nav">
+        <!-- Main heading for the page -->
+        <h1>People Looking to Adopt</h1>
+        
+        <!-- Navigation menu linking to other pages -->
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="animals.html">Animals</a>
+            <a href="people.html">People</a>
+            <a href="match.html">Match</a>
+        </nav>
+    </div>
 
+    <!-- Container for all people cards -->
     <div class="card-container">
 
-        <!-- First row -->
+        <!-- First row of people cards -->
         <div class="row">
+            <!-- Young Couple card -->
             <div class="card">
                 <img src="../images/personA.jpg" alt="Couple">
                 <h3>Young Couple</h3>
                 <p>This couple recently moved into their first apartment and is looking for a pet to join their home. They spend a lot of time together and want a calm pet that enjoys indoor life and cuddles.</p>
             </div>
 
+            <!-- Jason card -->
             <div class="card">
                 <img src="../images/personB.jpg" alt="Jason">
                 <h3>Jason</h3>
                 <p>Jason is a young adult who enjoys streaming and being outside. He grew up around pets and is very comfortable taking care of them. He is looking for a calm pet that he can take care of while streaming.</p>
             </div>
 
+            <!-- Family card -->
             <div class="card">
                 <img src="../images/personC.jpg" alt="Family">
                 <h3>Family</h3>
@@ -38,20 +64,23 @@
             </div>
         </div>
 
-        <!-- Second row -->
+        <!-- Second row of people cards -->
         <div class="row">
+            <!-- Sarah card -->
             <div class="card">
                 <img src="../images/personD.jpg" alt="Sarah">
                 <h3>Sarah</h3>
                 <p>Sarah is a teacher who lives alone and works from home several days a week. She's looking for a gentle companion who enjoys quiet time and doesn't need constant activity. Sarah has experience with shy animals.</p>
             </div>
 
+            <!-- Mike card -->
             <div class="card">
                 <img src="../images/personE.jpg" alt="Mike">
                 <h3>Mike</h3>
                 <p>Mike is an outdoorsy person who loves hiking and running. He's looking for an energetic dog that can join him on his adventures. Mike has a large yard and plenty of time to dedicate to training and exercise.</p>
             </div>
 
+            <!-- Emma card -->
             <div class="card">
                 <img src="../images/personF.jpg" alt="Emma">
                 <h3>Emma</h3>
@@ -61,8 +90,10 @@
 
     </div>
 
+    <!-- Back to home link, centered at the bottom of the page -->
     <p style="text-align: center; margin-top: 30px;">
         <a href="../index.html" style="color: #764ba2; text-decoration: none; font-weight: bold;">Back to Home</a>
     </p>
+    
 </body>
 </html>
